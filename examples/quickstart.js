@@ -6,6 +6,7 @@
 // When not cloning the `node-wit` repo, replace the `require` like so:
 // const Wit = require('node-wit').Wit;
 const Wit = require('../').Wit;
+const smacresponse = require('../jsonresponse/category.json')
 
 const token = (() => {
   if (process.argv.length !== 3) {
@@ -43,13 +44,29 @@ const actions = {
   error(sessionId, context, error) {
     console.log(error.message);
   },
-  ['fetch-weather'](sessionId, context, cb) {
-    // Here should go the api call, e.g.:
-    // context.forecast = apiCall(context.loc)
-    context.forecast = 'sunny';
+  ['fetch-category'](sessionId, context, cb) {
+    //callsmac(context.product
+    var categories = smacresponse.categories;
+    if(categories.length == 1) {
+      var categoryPath = categories[0].categoryPath;
+      console.log(categoryPath)
+      var cateogryPathLength = categoryPath.length;
+      context.category = categoryPath[cateogryPathLength-1].categoryName + " " + categoryPath[cateogryPathLength-2].categoryName + " cateogry"
+    }
+    // for(var i=0; i<categories.length; i++) {
+    //   //if more than one cateogry tree
+    // }
     cb(context);
   },
+  ['fetch-aspect'](sessionId, context, cb) {
+    //callsmac(context.product
+    context.asp = smacresponse.categories
+    cb(context);
+  }
 };
 
 const client = new Wit(token, actions);
+
+
+
 client.interactive();

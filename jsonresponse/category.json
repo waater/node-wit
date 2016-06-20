@@ -1,0 +1,75 @@
+{
+    "categories": [
+        {
+            "categoryId": "15709",
+            "categoryPath": [
+                {
+                    "categoryId": "11450",
+                    "categoryName": "Clothing, Shoes & Accessories"
+                },
+                {
+                    "categoryId": "93427",
+                    "categoryName": "Men's Shoes"
+                },
+                {
+                    "categoryId": "15709",
+                    "categoryName": "Athletic"
+                }
+            ],
+            "categoryAspects": [
+                {
+                    "aspectName": "Brand",
+                    "aspectValues": []
+                },
+                {
+                    "aspectName": "US Shoe Size (Men's)",
+                    "aspectValues": []
+                },
+                {
+                    "aspectName": "Style",
+                    "aspectValues": []
+                }
+            ]
+        }
+    ],
+    "defaultCategory": {
+        "categoryId": "15709",
+        "categoryPath": [
+            {
+                "categoryId": "11450",
+                "categoryName": "Clothing, Shoes & Accessories"
+            },
+            {
+                "categoryId": "93427",
+                "categoryName": "Men's Shoes"
+            },
+            {
+                "categoryId": "15709",
+                "categoryName": "Athletic"
+            }
+        ],
+        "categoryAspects": [
+            {
+                "aspectName": "Brand",
+                "aspectValues": []
+            },
+            {
+                "aspectName": "US Shoe Size (Men's)",
+                "aspectValues": []
+            },
+            {
+                "aspectName": "Style",
+                "aspectValues": []
+            }
+        ]
+    },
+    "keywordSuggestions": [
+        "nike mens running shoes"
+    ],
+    "categoryConfidance": {
+        "value": "HIGH",
+        "content": "You have default category"
+    },
+    "errorDataList": [],
+    "similarItems": null
+}
